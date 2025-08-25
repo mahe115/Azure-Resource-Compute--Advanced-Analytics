@@ -1,0 +1,7 @@
+## Folder Descriptions
+
+- **data/**: Contains raw and processed datasets used for Azure demand forecasting.
+- **notebooks/**: Jupyter notebooks for data exploration and cleaning.
+- **reports/**: EDA reports and screenshots generated during analysis.
+- **scripts/**: Python utility scripts for data processing tasks.
+- **requirements.txt**: Project dependencies.
