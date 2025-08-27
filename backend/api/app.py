@@ -80,6 +80,8 @@ from pathlib import Path
 
 app = Flask(__name__)
 CORS(app)
+print("🔹 Azure Backend API is starting...")
+
 
 # Paths
 PROC = Path(__file__).resolve().parents[1] / "data" / "processed"
@@ -168,4 +170,3 @@ def insights():
 # Run App
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
-
