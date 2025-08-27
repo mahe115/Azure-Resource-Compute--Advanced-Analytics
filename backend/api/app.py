@@ -73,6 +73,9 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
 '''
 # backend/api/app.py
+import logging
+logging.basicConfig(level=logging.INFO)
+
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import pandas as pd
@@ -118,6 +121,7 @@ def ping():
 # Milestone 1 APIs
 @app.route('/api/usage-trends')
 def usage_trends():
+    logging.info("Usage trends API called") 
     df = _load_cleaned()
     region = request.args.get('region')
     if region:
@@ -127,6 +131,7 @@ def usage_trends():
     trends = df.groupby('date')['usage_cpu'].mean().reset_index()
     trends['date'] = trends['date'].dt.strftime('%Y-%m-%d')
     return jsonify(trends.to_dict(orient='records'))
+
 
 @app.route('/api/top-regions')
 def top_regions():
