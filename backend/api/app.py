@@ -87,9 +87,19 @@ print("🔹 Azure Backend API is starting...")
 PROC = Path(__file__).resolve().parents[1] / "data" / "processed"
 
 # Helpers
-def _load_cleaned():
+'''def _load_cleaned():
     path = PROC / "cleaned_merged.csv"
     return pd.read_csv(path, parse_dates=['date']) if path.exists() else pd.DataFrame()
+    '''
+def _load_cleaned():
+    path = PROC / "cleaned_merged.csv"
+    if path.exists():
+        df = pd.read_csv(path, parse_dates=['date'])
+    else:
+        df = pd.DataFrame()
+    if df.empty:
+        print("⚠️ _load_cleaned(): No data found")
+    return df
 
 def _load_features():
     path = PROC / "feature_engineered.csv"
