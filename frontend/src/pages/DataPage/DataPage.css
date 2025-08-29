@@ -1,0 +1,28 @@
+.DataPage {
+  padding: 20px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid var(--palette-100);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: var(--palette-400);
+  font-weight: bold;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #fafafa;
+  color: var(--bg-dark);
+}
+

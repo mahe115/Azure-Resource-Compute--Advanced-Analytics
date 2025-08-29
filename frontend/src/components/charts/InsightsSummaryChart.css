@@ -1,0 +1,47 @@
+.insights-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  height: 100%;
+  align-content: center;
+  padding: 1rem 0;
+}
+
+.summary-card {
+  background-color: var(--palette-900);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 4px solid var(--primary-color);
+  transition: background-color 0.2s ease;
+}
+
+.summary-card:hover {
+    background-color: var(--primary-alpha);
+}
+
+.summary-value {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.summary-label {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summary-loading {
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

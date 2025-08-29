@@ -1,0 +1,23 @@
+.chart-card {
+  background-color: var(--palette-800);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px var(--shadow-dark);
+  transition: transform 0.2s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-2px);
+}
+
+.chart-title {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.chart-content {
+  position: relative;
+  min-height: 300px;
+}

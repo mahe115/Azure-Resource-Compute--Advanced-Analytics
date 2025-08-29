@@ -1,0 +1,97 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--nav-bg);
+  color: var(--muted);
+  box-shadow: 0 2px 8px var(--shadow-dark);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.azure-icon {
+  color: var(--primary-color);
+  width: 24px;
+  height: 24px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: var(--palette-400);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: linear-gradient(135deg, #6C63FF, #00C49F);
+  opacity: 0.3;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.4s ease;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.nav-link:hover::before {
+  width: 200%;
+  height: 500%;
+}
+
+.nav-link:hover {
+  color: white;
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 8px 20px rgba(65, 90, 119, 0.15);
+}
+
+.nav-link.active {
+  color: white;
+  background: var(--primary-color);
+  box-shadow: 0 6px 20px rgba(65, 90, 119, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.nav-link.active::before {
+  display: none;
+}
+
+
+.nav-icon {
+  font-size: 1.05rem;
+  opacity: 0.95;
+}

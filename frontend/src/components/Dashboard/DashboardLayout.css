@@ -1,0 +1,36 @@
+.dashboard-layout {
+  padding: 2rem;
+}
+
+.dashboard-header-container { 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.view-selector {
+  background-color: var(--palette-800);
+  color: var(--muted);
+  border: 1px solid var(--palette-600);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  color: var(--muted);
+}
