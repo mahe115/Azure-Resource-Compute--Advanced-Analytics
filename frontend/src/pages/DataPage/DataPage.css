@@ -11,18 +11,19 @@
 
 .data-table th,
 .data-table td {
-  border: 1px solid var(--palette-100);
+  border: 1px solid var(--dark-100);
   padding: 8px 12px;
   text-align: left;
 }
 
 .data-table th {
-  background-color: var(--palette-400);
+  background-color: var(--primary-alpha);
+  color: var(--text-color);
   font-weight: bold;
 }
 
 .data-table tr:nth-child(even) {
-  background-color: #fafafa;
-  color: var(--bg-dark);
+  background-color: var(--hover-alpha);
+  color: var(--text-color);
 }
 

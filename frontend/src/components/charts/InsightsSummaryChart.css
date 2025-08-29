@@ -8,7 +8,7 @@
 }
 
 .summary-card {
-  background-color: var(--palette-900);
+  background-color: var(--primary-alpha);
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
@@ -20,7 +20,7 @@
 }
 
 .summary-card:hover {
-    background-color: var(--primary-alpha);
+    background-color: var(--hover-alpha);
 }
 
 .summary-value {

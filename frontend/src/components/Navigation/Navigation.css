@@ -21,7 +21,7 @@
   margin: 0;
   font-size: 1.25rem;
   font-weight: 600;
-  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  background: var(--primary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -59,7 +59,7 @@
   top: 50%;
   width: 0;
   height: 0;
-  background: linear-gradient(135deg, #6C63FF, #00C49F);
+  background: var(--text-color);
   opacity: 0.3;
   transform: translate(-50%, -50%) rotate(45deg);
   transition: all 0.4s ease;
@@ -79,8 +79,8 @@
 }
 
 .nav-link.active {
-  color: white;
-  background: var(--primary-color);
+  color: var(--nav-bg);
+  background: var(--text-color);
   box-shadow: 0 6px 20px rgba(65, 90, 119, 0.2);
   transform: translateY(-2px);
   transition: all 0.3s ease;

@@ -32,5 +32,22 @@
   justify-content: center;
   align-items: center;
   min-height: 400px;
-  color: var(--muted);
+  color: var(--text-color);
 }
+
+select.view-selector {
+  background-color: var(--nav-bg); 
+  color: var(--text-color);       
+  border: 1px solid var(--dark-100);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+select.view-selector option {
+  background-color: var(--nav-bg); 
+  color: var(--text-color);   
+}
+
+

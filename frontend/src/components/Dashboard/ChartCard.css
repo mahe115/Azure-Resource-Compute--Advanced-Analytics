@@ -1,17 +1,26 @@
 .chart-card {
-  background-color: var(--palette-800);
+   background-color: var(--nav-bg); 
+  color: var(--text-color);       
+  border: 1px solid var(--dark-100);
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 6px var(--shadow-dark);
   transition: transform 0.2s ease;
 }
 
+.chart-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .chart-card:hover {
   transform: translateY(-2px);
 }
 
+
 .chart-title {
-  color: var(--muted);
+  color: var(--text-color);
   font-size: 1.1rem;
   margin-bottom: 1rem;
   font-weight: 500;
@@ -20,4 +29,25 @@
 .chart-content {
   position: relative;
   min-height: 300px;
+}
+
+.expand-button{
+  background-color: var(--nav-bg); 
+  color: var(--text-color);       
+  border: 1px solid var(--dark-100);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px); 
+  background-color: rgba(0,0,0,0.3); 
+  z-index: 999;
 }
